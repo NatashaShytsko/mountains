@@ -8,7 +8,16 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('../fonts/GothamPro-Bold.eot');
+    src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+    url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro-Bold.woff') format('woff'),
+    url('../fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 @font-face {
     font-family: 'Better Together Script';
     src: url('../fonts/Better Together Script.otf');
@@ -21,7 +30,10 @@ header{
     display: block;
     width: 100%;
     background: rgba(255,255,255,0.3);
-    text-align: center;
+
+}
+header nav{
+    text-align: right;
 }
 header nav ul li {
     display: inline-block;
@@ -39,11 +51,13 @@ header nav ul li a:hover{
     text-decoration: none;
     color: #6796ce;
 }
-header nav, header .button{
+header nav, header div{
     display: inline-block;
 
 }
-
+header div{
+    text-align: center;
+}
 header a.button{
     font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
@@ -53,14 +67,13 @@ header a.button{
     background: white;
     padding: 10px 45px;
     border-radius: 25px;
-    margin-left: 95px;
+
 }
 .top{
     background: url("../img/back.png") no-repeat;
     background-size: cover;
-    height: 100vh;
     text-align: center;
-    line-height: 110vh;
+    line-height: 100vh;
 }
 .top span{
     display: inline-block;
@@ -70,4 +83,34 @@ header a.button{
     width: 50%;
     line-height: 130px;
 
+}
+.about h1{
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #389ffa 0%, #6796ce);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #6796ce;
+
+}
+.about .text{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 18px;
+    color: #6796ce;
+    margin-top: 40px;
+}
+.about .icons{
+    margin-bottom: 40px;
+}
+.about .icons img, .about .icons div{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+}
+.about .icons div span{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 24px;
+    color: #6796ce;
+    display: block;
 }
