@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../fonts/GothamPro.eot');
+    src: local('Gotham Pro'), local('GothamPro'),
+    url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Better Together Script';
+    src: url('../fonts/Better Together Script.otf');
+    src: url('../fonts/Better Together Script.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+header{
+    position: fixed;
+    display: block;
+    width: 100%;
+    background: rgba(255,255,255,0.3);
+    text-align: center;
+}
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 20px 0px 15px 35px;
+}
+header nav ul li a{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+header nav ul li a:hover{
+    text-decoration: none;
+    color: #6796ce;
+}
+header nav, header .button{
+    display: inline-block;
+
+}
+
+header a.button{
+    font-family: 'Gotham Pro', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #6796ce;
+    background: white;
+    padding: 10px 45px;
+    border-radius: 25px;
+    margin-left: 95px;
+}
+.top{
+    background: url("../img/back.png") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    line-height: 110vh;
+}
+.top span{
+    display: inline-block;
+    font-family: 'Better Together Script', sans-serif;
+    font-size: 140px;
+    color: white;
+    width: 50%;
+    line-height: 130px;
+
+}
