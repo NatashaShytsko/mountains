@@ -25,6 +25,17 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face
+{
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?5142199');
+    src: url('../fonts/fontello.eot?5142199#iefix') format('embedded-opentype'),
+    url('../fonts/fontello.woff?5142199') format('woff'),
+    url('../fonts/fontello.ttf?5142199') format('truetype'),
+    url('../fonts/fontello.svg?5142199#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 header{
     position: fixed;
     display: block;
@@ -73,7 +84,7 @@ header a.button{
     background: url("../img/back.png") no-repeat;
     background-size: cover;
     text-align: center;
-    line-height: 100vh;
+    line-height: 110vh;
 }
 .top span{
     display: inline-block;
@@ -84,7 +95,7 @@ header a.button{
     line-height: 130px;
 
 }
-.about h1{
+.about h1, .hotel h1, .hotel h2{
     font-family: 'Gotham Pro Bold', sans-serif;
     font-size: 60px;
     font-weight: bold;
@@ -108,9 +119,99 @@ header a.button{
     vertical-align: middle;
     padding: 5px;
 }
+
 .about .icons div span{
     font-family: 'Gotham Pro', sans-serif;
     font-size: 24px;
     color: #6796ce;
     display: block;
+}
+.hotel{
+    background: url("../img/backhotel.png") no-repeat;
+    background-size: cover;
+    padding-top: 5%;
+}
+.hotel .container .row{
+    display: block;
+    text-align: center;
+}
+.hotel .cards div{
+    display: inline-block;
+    padding: 0px;
+    margin: 5px -2px;
+}
+.hotel .cards .hotelcard{
+    position: relative;
+    overflow: hidden;
+}
+.hotel .cards div img{
+    border-radius: 25px;
+}
+.hotel .cards div .hotelname{
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding-top: 1%;
+    padding-left: 10%;
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 22px;
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 25px 25px 0 0;
+
+}
+
+.hotel .cards div .price{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    bottom: 0;
+    left: 0px;
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 24px;
+    color: white;
+    border-radius: 0 0 25px 25px;
+}
+.hotel .cards div .price .onepeople{
+    font-size: 14px;
+}
+.hotel .see div{
+    display: inline-block;
+    margin: 40px;
+}
+.hotel .see .button a{
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(180deg, #389ffa 0%, #6796ce);
+    padding: 15px 20px;
+    border-radius: 25px;
+    color: #fff;
+}
+.hotel .see .button a i{
+    padding-left: 40px;
+}
+.hotel .see div span{
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #6796ce;
+}
+@media (max-width: 1200px) and (min-width: 992px){
+    .hotel .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hotel .cards div{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
 }
