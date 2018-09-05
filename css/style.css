@@ -37,7 +37,7 @@
     font-style: normal;
 }
 header{
-    position: fixed;
+    position: absolute;
     display: block;
     width: 100%;
     background: rgba(255,255,255,0.3);
@@ -131,7 +131,7 @@ header a.button{
     background-size: cover;
     padding-top: 5%;
 }
-.hotel .container .row, .gallery .container .row, .reviews .container .row{
+.hotel .container .row, .gallery .container .row, .reviews .container .row, .contacts .container .row{
     display: block;
     text-align: center;
 }
@@ -276,7 +276,44 @@ header a.button{
 
 
 }
+.contacts{
+    background: #4670c2;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.contacts h1{
+    font-family: 'Gotham Pro Bold', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    padding-bottom: 3%;
+}
+.contacts form div{
+    display: inline-block;
+    margin-left: -4px;
+}
+.contacts input{
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+}
 
+.contacts input[placeholder], .contacts input[type=submit]{
+    font-family: "Gotham Pro", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+
+}
+.contacts input[type=submit]{
+     width: 100%;
+     background: #355695;
+     color: #fff;
+ }
+::-webkit-input-placeholder {color:#000;}
+::-moz-placeholder          {color:#000;}/* Firefox 19+ */
+:-moz-placeholder           {color:#000;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#000;}
 @media (max-width: 1200px) and (min-width: 992px){
     .hotel .cards{
         display: flex;
