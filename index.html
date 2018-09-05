@@ -17,7 +17,11 @@
 <header>
     <div class="container">
         <div class="row">
-    <nav class="col-md-8">
+            <span class="navbar-toggle">
+               <i class="demo-icon icon-menu"></i>
+            </span>
+            <a href="" class="moblogo"><img src="img/logo.png"></a>
+    <nav class="col-md-9">
     <ul>
         <li><a href="">About</a></li>
         <li><a href="">Hotel</a></li>
@@ -178,10 +182,10 @@
         <div class="row">
             <h1>Contacts</h1>
             <form>
-               <div class="col-md-3"> <input type="text" name="name" placeholder="Name"></div>
-                <div class="col-md-3">  <input type="email" name="email" placeholder="E-mail"></div>
-                <div class="col-md-3"> <input type="text" name="phone" placeholder="Phone"></div>
-                <div class="col-md-3"> <input type="submit" value="send"></div>
+               <div class="col-lg-3 col-md-6"> <input type="text" name="name" placeholder="Name"></div>
+                <div class="col-lg-3 col-md-6">  <input type="email" name="email" placeholder="E-mail"></div>
+                <div class="col-lg-3 col-md-6"> <input type="text" name="phone" placeholder="Phone"></div>
+                <div class="col-lg-3 col-md-6"> <input type="submit" value="send"></div>
             </form>
         </div>
     </div>
@@ -189,6 +193,7 @@
 <footer>
     <div class="container">
         <div class="row">
+            <a href="" class="moblogo"><img src="img/logo.png"></a>
     <nav class="col-md-9">
         <ul>
             <li><a href="">About</a></li>
@@ -223,8 +228,23 @@
         columns.height(tallestcolumn);
     }
     $(document).ready(function() {
-        setEqualHeight($(".revcards > .col-md-4 > .card"));
+        setEqualHeight($(".revcards>.col-md-4>.card"));
     });
+
+    $(document).ready(function () {
+        $('span.navbar-toggle').click(function (e) {
+            $(this).toggleClass('active');
+            $('nav').toggle();
+            e.stopPropagation();
+        });
+        $('body').click(function () {
+            var link = $('span.navbar-toggle');
+            if (link.hasClass('active')) {
+                link.click();
+            }
+        });
+    });
+
 </script>
 </body>
 </html>

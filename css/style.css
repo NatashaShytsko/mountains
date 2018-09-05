@@ -93,6 +93,7 @@ header a.button, footer a.button{
     background: url("../img/back.png") no-repeat;
     background-size: cover;
     text-align: center;
+    height: 100vh;
     line-height: 110vh;
 }
 .top span{
@@ -151,7 +152,11 @@ header a.button, footer a.button{
 }
 .hotel .cards .hotelcard{
     position: relative;
+    transition: all .5s;
     overflow: hidden;
+}
+.hotel .cards .hotelcard:hover{
+    transform: scale(1.03);
 }
 .hotel .cards div img{
     border-radius: 25px;
@@ -254,7 +259,7 @@ header a.button, footer a.button{
     padding: 15px 50px;
 }
 .reviews{
-    padding-top: 2%;
+    padding-top: 3%;
     padding-bottom: 5%;
 }
 .reviews .revcards > div{
@@ -305,6 +310,8 @@ header a.button, footer a.button{
     padding: 10px 20px;
     border-radius: 25px;
     border: none;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .contacts input[placeholder], .contacts input[type=submit]{
@@ -339,4 +346,97 @@ footer{
         padding: 5px;
     }
 
+}
+@media (max-width: 992px){
+    header nav ul li, footer nav ul li{
+        padding-left: 15px;
+    }
+    header nav ul li a, footer nav ul li a {
+        font-size: 13px;
+    }
+    header a.button, footer a.button{
+        padding: 10px 40px;
+    }
+    .top{
+        background-position: 50% 0%;
+        background-size: auto;
+    }
+    .top span{
+        font-size: 100px;
+        line-height: 100px;
+        width: 100%;
+    }
+    .gallery .galleryprew .photo_1, .gallery .galleryprew .photo_3{
+        width: 50%;
+    }
+
+    .gallery .galleryprew .photo_1, .gallery .see{
+        float: none;
+        top: 0;
+    }
+    .gallery .galleryprew .photo_2{
+       left: 0;
+        top: -3em;
+        width: 100%;
+    }
+    .gallery .galleryprew .photo_3{
+        float: none;
+        top: -5em;
+    }
+}
+@media (min-width: 768px){
+    .navbar-toggle,.moblogo{
+        display: none;
+    }
+
+
+}
+@media (max-width: 768px){
+    .navbar-toggle{
+
+        display: inline-block;
+        font-size: 30px;
+        color: white;
+        float: left;
+    }
+    .moblogo {
+        display: inline-block;
+        padding-top: 5%;
+    }
+    header .moblogo{
+        margin-left: -45px;
+    }
+    header{
+        position: relative;
+        background: #bfd3f0;
+    }
+    header nav{
+        display: none;
+    }
+    header nav ul, footer nav ul{
+        text-align: center;
+        padding: 0;
+    }
+    header nav ul li{
+        display: block;
+        padding-left: 0;
+    }
+    header nav ul li:nth-child(4), footer nav ul li:nth-child(4){
+        display: none;
+    }
+    header .col-md-3, footer .col-md-3{
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+@media (max-width: 540px){
+    .top span{
+        font-size: 50px;
+        line-height: 65px;
+    }
+}
+@media all and (-ms-high-contrast:none){
+    .about h1, .hotel h1, .hotel h2, .gallery h1, .gallery h2, .reviews h1, .reviews h2{
+        background: none;
+    }
 }
