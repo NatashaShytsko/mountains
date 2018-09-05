@@ -21,7 +21,7 @@
                <i class="demo-icon icon-menu"></i>
             </span>
             <a href="" class="moblogo"><img src="img/logo.png"></a>
-    <nav class="col-md-9">
+    <nav class="col-md-9 head">
     <ul>
         <li><a href="">About</a></li>
         <li><a href="">Hotel</a></li>
@@ -234,7 +234,7 @@
     $(document).ready(function () {
         $('span.navbar-toggle').click(function (e) {
             $(this).toggleClass('active');
-            $('nav').toggle();
+            $('.head').toggle();
             e.stopPropagation();
         });
         $('body').click(function () {

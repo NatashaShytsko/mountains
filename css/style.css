@@ -393,7 +393,6 @@ footer{
 }
 @media (max-width: 768px){
     .navbar-toggle{
-
         display: inline-block;
         font-size: 30px;
         color: white;
@@ -410,8 +409,10 @@ footer{
         position: relative;
         background: #bfd3f0;
     }
-    header nav{
+    header nav.head{
         display: none;
+        flex: 0;
+        max-width: 100%;
     }
     header nav ul, footer nav ul{
         text-align: center;
@@ -427,6 +428,8 @@ footer{
     header .col-md-3, footer .col-md-3{
         text-align: center;
         margin: 25px 0;
+        flex: 0;
+        max-width: 100%;
     }
 }
 @media (max-width: 540px){
