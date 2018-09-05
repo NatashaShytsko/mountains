@@ -41,35 +41,44 @@ header{
     display: block;
     width: 100%;
     background: rgba(255,255,255,0.3);
+    text-align: center;
 
 }
-header nav{
+header .container .row, footer .container .row{
+    display: block;
+}
+header nav, footer nav{
     text-align: right;
 }
-header nav ul li {
+header nav ul li, footer nav ul li {
     display: inline-block;
     list-style: none;
     padding: 20px 0px 15px 35px;
 }
-header nav ul li a{
+header nav ul li a, footer nav ul li a{
     font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
     color: white;
     font-size: 15px;
     text-transform: uppercase;
 }
-header nav ul li a:hover{
+header nav ul li a:hover, footer nav ul li a:hover{
     text-decoration: none;
     color: #6796ce;
 }
-header nav, header div{
+header nav, header div, footer nav, footer div{
     display: inline-block;
 
 }
-header div{
+header div, footer div{
     text-align: center;
 }
-header a.button{
+header .col-md-3, footer .col-md-3{
+    margin-left: -5px;
+    text-align: right;
+
+}
+header a.button, footer a.button{
     font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -310,6 +319,11 @@ header a.button{
      background: #355695;
      color: #fff;
  }
+footer{
+    background: #214997;
+    padding: 1% 0;
+    text-align: center;
+}
 ::-webkit-input-placeholder {color:#000;}
 ::-moz-placeholder          {color:#000;}/* Firefox 19+ */
 :-moz-placeholder           {color:#000;}/* Firefox 18- */
