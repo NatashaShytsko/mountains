@@ -8,6 +8,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Gotham Pro Bold';
     src: url('../fonts/GothamPro-Bold.eot');
@@ -18,6 +19,7 @@
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Better Together Script';
     src: url('../fonts/Better Together Script.otf');
@@ -25,8 +27,8 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face
-{
+
+@font-face {
     font-family: 'fontello';
     src: url('../fonts/fontello.eot?5142199');
     src: url('../fonts/fontello.eot?5142199#iefix') format('embedded-opentype'),
@@ -36,49 +38,59 @@
     font-weight: normal;
     font-style: normal;
 }
-header{
+
+header {
     position: absolute;
     display: block;
     width: 100%;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     text-align: center;
 
 }
-header .container .row, footer .container .row{
+
+header .container .row, footer .container .row {
     display: block;
 }
-header nav, footer nav{
+
+header nav, footer nav {
     text-align: right;
 }
+
 header nav ul li, footer nav ul li {
     display: inline-block;
     list-style: none;
-    padding: 20px 0px 15px 35px;
+    padding: 20px 0 15px 35px;
 }
-header nav ul li a, footer nav ul li a{
+
+header nav ul li a, footer nav ul li a {
     font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
     color: white;
     font-size: 15px;
     text-transform: uppercase;
 }
-header nav ul li a:hover, footer nav ul li a:hover{
+
+header nav ul li a:hover, footer nav ul li a:hover {
     text-decoration: none;
     color: #6796ce;
 }
-header nav, header div, footer nav, footer div{
+
+header nav, header div, footer nav, footer div {
     display: inline-block;
 
 }
-header div, footer div{
+
+header div, footer div {
     text-align: center;
 }
-header .col-md-3, footer .col-md-3{
+
+header .col-md-3, footer .col-md-3 {
     margin-left: -5px;
     text-align: right;
 
 }
-header a.button, footer a.button{
+
+header a.button, footer a.button {
     font-family: 'Gotham Pro', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -87,16 +99,22 @@ header a.button, footer a.button{
     background: white;
     padding: 10px 45px;
     border-radius: 25px;
+    transition: all .5s;
 
 }
-.top{
+header a.button:hover, footer a.button:hover{
+    text-decoration: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.top {
     background: url("../img/back.png") no-repeat;
     background-size: cover;
     text-align: center;
     height: 100vh;
     line-height: 110vh;
 }
-.top span{
+
+.top span {
     display: inline-block;
     font-family: 'Better Together Script', sans-serif;
     font-size: 140px;
@@ -105,7 +123,8 @@ header a.button, footer a.button{
     line-height: 130px;
 
 }
-.about h1, .hotel h1, .hotel h2, .gallery h1, .gallery h2, .reviews h1, .reviews h2{
+
+.about h1, .hotel h1, .hotel h2, .gallery h1, .gallery h2, .reviews h1, .reviews h2 {
     font-family: 'Gotham Pro Bold', sans-serif;
     font-size: 60px;
     font-weight: bold;
@@ -115,53 +134,63 @@ header a.button, footer a.button{
     color: #6796ce;
 
 }
-.about .text{
+
+.about .text {
     font-family: 'Gotham Pro', sans-serif;
     font-size: 18px;
     color: #6796ce;
     margin-top: 40px;
 }
-.about .icons{
+
+.about .icons {
     margin-bottom: 40px;
 }
-.about .icons img, .about .icons div{
+
+.about .icons img, .about .icons div {
     display: inline-block;
     vertical-align: middle;
     padding: 5px;
 }
 
-.about .icons div span{
+.about .icons div span {
     font-family: 'Gotham Pro', sans-serif;
     font-size: 24px;
     color: #6796ce;
     display: block;
 }
-.hotel{
+
+.hotel {
     background: url("../img/backhotel.png") no-repeat;
     background-size: cover;
     padding-top: 5%;
 }
-.hotel .container .row, .gallery .container .row, .reviews .container .row, .contacts .container .row{
+
+.hotel .container .row, .gallery .container .row, .reviews .container .row, .contacts .container .row {
     display: block;
     text-align: center;
 }
-.hotel .cards div{
+
+.hotel .cards div {
     display: inline-block;
-    padding: 0px;
+    padding: 0;
     margin: 5px -2px;
 }
-.hotel .cards .hotelcard{
+
+.hotel .cards .hotelcard {
     position: relative;
     transition: all .5s;
     overflow: hidden;
 }
-.hotel .cards .hotelcard:hover{
+
+.hotel .cards .hotelcard:hover {
     transform: scale(1.03);
 }
-.hotel .cards div img{
+
+.hotel .cards div img {
     border-radius: 25px;
 }
-.hotel .cards div .hotelname{
+
+.hotel .cards div .hotelname {
     position: absolute;
     display: block;
     width: 100%;
@@ -178,28 +207,31 @@ header a.button, footer a.button{
 
 }
 
-.hotel .cards div .price{
+.hotel .cards div .price {
     position: absolute;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
     bottom: 0;
-    left: 0px;
+    left: 0;
     padding: 10px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     font-family: 'Gotham Pro Bold', sans-serif;
     font-size: 24px;
     color: white;
     border-radius: 0 0 25px 25px;
 }
-.hotel .cards div .price .onepeople{
+
+.hotel .cards div .price .onepeople {
     font-size: 14px;
 }
-.hotel .see div{
+
+.hotel .see div {
     display: inline-block;
     margin: 40px;
 }
-.hotel .see .button a, .gallery .see .button a{
+
+.hotel .see .button a, .gallery .see .button a {
     font-family: 'Gotham Pro Bold', sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -207,106 +239,130 @@ header a.button, footer a.button{
     padding: 15px 20px;
     border-radius: 25px;
     color: #fff;
+    transition: all 0.5s;
 }
-.hotel .see .button a i{
+.hotel .see .button a:hover, .gallery .see .button a:hover{
+    text-decoration: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.hotel .see .button a i {
     padding-left: 40px;
 }
-.hotel .see div span{
+
+.hotel .see div span {
     font-family: "Gotham Pro", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     color: #6796ce;
 }
-.gallery{
+
+.gallery {
     background: url("../img/backgallery.png") no-repeat;
     background-size: cover;
     padding-top: 5%;
 }
-.gallery .galleryprew{
+
+.gallery .galleryprew {
     position: relative;
     display: inline-block;
 }
-.gallery .galleryprew .photo{
+
+.gallery .galleryprew .photo {
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     position: relative;
     z-index: 10;
     transition: all .2s;
 }
-.gallery .galleryprew .photo_1{
+
+.gallery .galleryprew .photo_1 {
     top: 0;
-   float: right;
+    float: right;
 }
-.gallery .galleryprew .photo_2{
+
+.gallery .galleryprew .photo_2 {
     top: 5em;
     left: 11em;
 }
-.gallery .galleryprew .photo_3{
+
+.gallery .galleryprew .photo_3 {
     top: -10em;
     float: left;
 }
-.gallery .galleryprew .photo:hover{
+
+.gallery .galleryprew .photo:hover {
     transform: scale(1.05) translateY(-0.5rem);
     box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
     z-index: 20;
 }
-.gallery .see{
+
+.gallery .see {
     display: inline-block;
     position: relative;
     top: -13em;
     float: right;
 }
-.gallery .see .button a{
+
+.gallery .see .button a {
     padding: 15px 50px;
 }
-.reviews{
+
+.reviews {
     padding-top: 3%;
     padding-bottom: 5%;
 }
-.reviews .revcards > div{
+
+.reviews .revcards > div {
     display: inline-block;
     margin-left: -3px;
 }
-.reviews .revcards img{
+
+.reviews .revcards img {
     top: 2em;
     position: relative;
     z-index: 1;
 }
-.reviews .revcards .card{
+
+.reviews .revcards .card {
     padding: 50px 30px;
     border-radius: 25px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
 }
-.reviews .revcards .name{
+
+.reviews .revcards .name {
     font-family: 'Gotham Pro Bold', sans-serif;
     font-size: 14px;
     color: #3c3c3c;
     line-height: 46px;
     text-transform: uppercase;
 }
-.reviews .revcards .text{
+
+.reviews .revcards .text {
     font-family: 'Gotham Pro', sans-serif;
     font-size: 14px;
     color: #9d9d9d;
 
-
 }
-.contacts{
+
+.contacts {
     background: #4670c2;
     padding-top: 3%;
     padding-bottom: 3%;
 }
-.contacts h1{
+
+.contacts h1 {
     font-family: 'Gotham Pro Bold', sans-serif;
     font-size: 60px;
     font-weight: bold;
     color: #fff;
     padding-bottom: 3%;
 }
-.contacts form div{
+
+.contacts form div {
     display: inline-block;
     margin-left: -4px;
 }
-.contacts input{
+
+.contacts input {
     padding: 10px 20px;
     border-radius: 25px;
     border: none;
@@ -314,132 +370,169 @@ header a.button, footer a.button{
     margin-top: 10px;
 }
 
-.contacts input[placeholder], .contacts input[type=submit]{
+.contacts input[placeholder], .contacts input[type=submit] {
     font-family: "Gotham Pro", sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: #000;
 
 }
-.contacts input[type=submit]{
-     width: 100%;
-     background: #355695;
-     color: #fff;
- }
-footer{
+
+.contacts input[type=submit] {
+    width: 100%;
+    background: #355695;
+    color: #fff;
+}
+
+footer {
     background: #214997;
     padding: 1% 0;
     text-align: center;
 }
-::-webkit-input-placeholder {color:#000;}
-::-moz-placeholder          {color:#000;}/* Firefox 19+ */
-:-moz-placeholder           {color:#000;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#000;}
-@media (max-width: 1200px) and (min-width: 992px){
-    .hotel .cards{
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+::-moz-placeholder {
+    color: #000;
+}
+
+/* Firefox 19+ */
+:-moz-placeholder {
+    color: #000;
+}
+
+/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #000;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .hotel .cards {
         display: flex;
         flex-wrap: wrap;
     }
-    .hotel .cards div{
+
+    .hotel .cards div {
         display: flex;
         flex-direction: column;
         padding: 5px;
     }
 
 }
-@media (max-width: 992px){
-    header nav ul li, footer nav ul li{
+
+@media (max-width: 992px) {
+    header nav ul li, footer nav ul li {
         padding-left: 15px;
     }
+
     header nav ul li a, footer nav ul li a {
         font-size: 13px;
     }
-    header a.button, footer a.button{
+
+    header a.button, footer a.button {
         padding: 10px 40px;
     }
-    .top{
-        background-position: 50% 0%;
+
+    .top {
+        background-position: 50% 0;
         background-size: auto;
     }
-    .top span{
+
+    .top span {
         font-size: 100px;
         line-height: 100px;
         width: 100%;
     }
-    .gallery .galleryprew .photo_1, .gallery .galleryprew .photo_3{
+
+    .gallery .galleryprew .photo_1, .gallery .galleryprew .photo_3 {
         width: 50%;
     }
 
-    .gallery .galleryprew .photo_1, .gallery .see{
+    .gallery .galleryprew .photo_1, .gallery .see {
         float: none;
         top: 0;
     }
-    .gallery .galleryprew .photo_2{
-       left: 0;
+
+    .gallery .galleryprew .photo_2 {
+        left: 0;
         top: -3em;
-        width: 100%;
+        width: 95%;
     }
-    .gallery .galleryprew .photo_3{
+
+    .gallery .galleryprew .photo_3 {
         float: none;
         top: -5em;
     }
 }
-@media (min-width: 768px){
-    .navbar-toggle,.moblogo{
+
+@media (min-width: 768px) {
+    .navbar-toggle, .moblogo {
         display: none;
     }
 
-
 }
-@media (max-width: 768px){
-    .navbar-toggle{
+
+@media (max-width: 768px) {
+    .navbar-toggle {
         display: inline-block;
         font-size: 30px;
         color: white;
         float: left;
     }
+
     .moblogo {
         display: inline-block;
         padding-top: 5%;
     }
-    header .moblogo{
+
+    header .moblogo {
         margin-left: -45px;
     }
-    header{
+
+    header {
         position: relative;
         background: #bfd3f0;
     }
-    header nav.head{
+
+    header nav.head {
         display: none;
         flex: 0;
         max-width: 100%;
     }
-    header nav ul, footer nav ul{
+
+    header nav ul, footer nav ul {
         text-align: center;
         padding: 0;
     }
-    header nav ul li{
+
+    header nav ul li {
         display: block;
         padding-left: 0;
     }
-    header nav ul li:nth-child(4), footer nav ul li:nth-child(4){
+
+    header nav ul li:nth-child(4), footer nav ul li:nth-child(4) {
         display: none;
     }
-    header .col-md-3, footer .col-md-3{
+
+    header .col-md-3, footer .col-md-3 {
         text-align: center;
         margin: 25px 0;
         flex: 0;
         max-width: 100%;
     }
 }
-@media (max-width: 540px){
-    .top span{
+
+@media (max-width: 540px) {
+    .top span {
         font-size: 50px;
         line-height: 65px;
     }
 }
-@media all and (-ms-high-contrast:none){
-    .about h1, .hotel h1, .hotel h2, .gallery h1, .gallery h2, .reviews h1, .reviews h2{
+
+@media all and (-ms-high-contrast: none) {
+    .about h1, .hotel h1, .hotel h2, .gallery h1, .gallery h2, .reviews h1, .reviews h2 {
         background: none;
     }
 }
