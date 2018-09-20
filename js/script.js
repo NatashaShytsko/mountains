@@ -10,12 +10,8 @@ function setEqualHeight(columns) {
     );
     columns.height(tallestcolumn);
 }
-
 $(document).ready(function () {
     setEqualHeight($(".revcards>.col-md-4>.card"));
-});
-
-$(document).ready(function () {
     $('span.navbar-toggle').click(function (e) {
         $(this).toggleClass('active');
         $('.head').toggle();
