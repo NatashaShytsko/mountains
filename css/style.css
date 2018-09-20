@@ -102,10 +102,12 @@ header a.button, footer a.button {
     transition: all .5s;
 
 }
-header a.button:hover, footer a.button:hover{
+
+header a.button:hover, footer a.button:hover {
     text-decoration: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
+
 .top {
     background: url("../img/back.png") no-repeat;
     background-size: cover;
@@ -241,10 +243,12 @@ header a.button:hover, footer a.button:hover{
     color: #fff;
     transition: all 0.5s;
 }
-.hotel .see .button a:hover, .gallery .see .button a:hover{
+
+.hotel .see .button a:hover, .gallery .see .button a:hover {
     text-decoration: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
+
 .hotel .see .button a i {
     padding-left: 40px;
 }
